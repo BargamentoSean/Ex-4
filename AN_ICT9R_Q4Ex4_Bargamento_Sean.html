@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<title>Exercise 4</title>
+		<style type="text/css">
+			body{
+				font-family: Raleway;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+		<h1><b>G to KG conversion</b></h1>
+			<form>
+			Grams : <input type="text" id="G1" size="6"><br><br>
+			<input type="submit" value="CALCULATE" onclick="Translate()"><br>
+			<input type="Reset" name="CANCEL">
+			</form>
+
+			<script>
+				function Translate(){
+					let G = document.getElementById('G1').value;
+					let KG = G / 1000;
+
+					window.alert("The gram conversion is : " + KG);
+				}	
+			</script>
+		</center>
+	</body>
+</html>
